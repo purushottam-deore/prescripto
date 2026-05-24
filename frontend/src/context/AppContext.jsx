@@ -11,6 +11,7 @@ const AppContextProvider = (props) => {
     const [doctors, setDoctors] = useState([])
     const [token,setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : false)
     const [userData,setUserData] = useState(false)
+    const [loading,setLoading] = useState(true) 
     
 
     const getDoctorsData = async () => {
@@ -27,6 +28,8 @@ const AppContextProvider = (props) => {
         } catch (error) {
             console.log(error)
             toast.error(error.message)
+        } finally{
+            setLoading(false)
         }
 
     }
@@ -53,7 +56,8 @@ const AppContextProvider = (props) => {
         token,setToken,
         backendUrl,
         userData,setUserData,
-        loadUserProfileData
+        loadUserProfileData,
+        loading,setLoading
     }
 
     useEffect(()=>{
