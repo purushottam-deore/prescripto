@@ -1,0 +1,13 @@
+frontend :- https://prescripto-frontend-olms.onrender.com/
+admin :- https://prescripto-admin2.onrender.com/
+
+adminlogin = {
+  "email":"admin@prescripto.com",
+  "password":"qwerty123"
+}
+
+userlogin = {
+  "email":"purushottamdeore@gmail.com",
+  "password":"12345678"
+}
+
