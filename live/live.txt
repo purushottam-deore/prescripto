@@ -1,4 +1,4 @@
-frontend :- https://prescripto-frontend-olms.onrender.com/
+frontend :- https://prescripto-eta-five.vercel.app/
 admin :- https://prescripto-admin2.onrender.com/
 
 adminlogin = {
